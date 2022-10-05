@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number</title>
+</head>
+<body>
+  <h1>Javascript Math</h1>
+  <h2>The Math.random() Method</h2>
+  <p>Everytime u click the button,getRndinteger(min,max) returns a random Number between 1 and 100(both included):</p>
+  <p id="demo"></p>
+  <button onclick="document.getElementById('demo').innerHTML=getRndinteger(1,100)">click Me</button>
+
+   <script>
+    function getRndinteger(min,max){
+      return Math.floor(Math.random()*(max-min+1))+min;
+    }
+
+   </script>
+    
+   
+</body>
+</html>
